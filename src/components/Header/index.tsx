@@ -1,5 +1,9 @@
 import * as S from './styles'
 
+import { useDispatch, useSelector } from 'react-redux';
+import { addItem, removeItem, clearCart } from '../../redux/cartSlice';
+import { useFetchItemsQuery } from '../../redux/apiSlice';
+
 import { Produto } from '../../App'
 
 import cesta from '../../assets/cesta.png'
